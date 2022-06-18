@@ -4,12 +4,14 @@ body header, body main {
 
 header {
   color: white;
-  background-color: rgb(0, 0, 0, 0.4);
-  background-image: url("/img/la.jpg");
+  background-color: rgb(0, 0, 0, 0.6);
+  background-image: url("img/la.jpg");
+  filter: brightness(110%);
   background-position: center;
   background-size: cover;
   background-blend-mode:soft-light;
   position: relative;
+  margin-top: -35px;
 }
 
 .loo{
@@ -18,11 +20,12 @@ header {
   float: left;
   border-radius: 10px;
   position: relative;
-  top: 25px;
+  top: 15px;
+  margin-left: 40px;
 }
 
-strong.schoolname {
-  font-size: 30px;
+.schoolname {
+  font-size: 3vw;
   position: relative;
   top: 25px;
   }
@@ -46,6 +49,8 @@ body {
 
 .navbar {
   overflow: hidden;
+  background-color: #025940;
+  margin-top: 15px;
 }
 
 .navbar a {
@@ -56,12 +61,15 @@ body {
   padding: 14px 16px;
   text-decoration: none;
   font-size: 17px;
+  margin-left: 20px;
 }
 
 .navbar a:hover {
-  background-color: #025940;
-  color:rgb(233, 241, 241);
+  background-color: rgb(247, 247, 19, 0.918);
+  color: #025940;
   border-radius: 10px;
+  font-size: large;
+  padding: 10px;
 }
 
 .navbar .search-container {
@@ -89,27 +97,11 @@ body {
 }
 
 .navbar .search-container button:hover {
-  background: #025940;
+  background: rgb(247, 247, 19, 0.918);
+  color: #025940;
 }
 
-@media screen and (max-width: 600px) {
-  .topnav .search-container {
-    float: none;
-  }
-  .navbar a,
-  .search-container input[type="text"],
-  .navbar .search-container button {
-    float: none;
-    display: block;
-    text-align: left;
-    width: 100%;
-    margin: 0;
-    padding: 14px;
-  }
-  .search-container input[type="text"] {
-    color: white;
-  }
-}
+
 .intro {
   text-align: center;
   height: 400px;
@@ -146,7 +138,7 @@ border: 1px solid white;
 }
 
 #sm {
-  font-size: 200%;
+  font-size: 5vw;
   text-align: center;
 }
 #st {
@@ -168,12 +160,27 @@ border: 1px solid white;
 main div.lll {
   text-align: center;
 }
+
+.Gtab {
+  margin: 10px 160px;
+  margin-left: 250px;
+}
+.tab1 img, .tab2 img {
+  width: 500px;
+  float: left;
+  height: 350px;
+}
+
 .bol {
   font-size: 25px;
 }
-.wor {
+.wor1, .wor2 {
   font-size: 20px;
+  background-color: #025940;
   color: white;
+  width: 500px;
+  float: left;text-align: center;
+  height: 350px;
 }
 .applynow {
   padding: 5px;
@@ -181,37 +188,41 @@ main div.lll {
   border-radius: 7px;
   font-size: 20px;
 }
-table.mid {
-  text-align: center;
-  border: 0px solid #f9fcfb;
-  margin-left: auto;
-  margin-right: auto;
-  background-color: #025940;
-  border-spacing: 0px;
-  border-collapse: collapse;
-  margin-bottom: 150px;
-}
-td img {
-  width: 550px;
+.applynow:hover {
+  background-color: rgba(247, 247, 19, 0.918);
+  color: #025940;
+  padding: 6px;
+  cursor: pointer;
 }
 
-.column {
+.colum {
   text-align: center;
-  border: 2px solid black;
-  border-radius: 5px;
+  width: 250px;
+  margin: 0px 20px;
   height: 370px;
-  background-color: rgba(250, 246, 210, 0.877);
+  border: 1px solid white;
+  border-radius: 5px;
+  background-color: #025940;
+  color: white;
+  float: left;
+  }
+  .col1 {
+    margin-left: 120px;
+  }
+  img.iii {
+    border-radius: 1px;
   }
 .row {
+  content: "";
   margin: 0px 100px;
-  display: grid;
-  grid-template-columns: repeat(4,minmax(0,1fr));
-  gap: 50px;
+  display: table;
+  margin-top: 800px;
+  margin-left: 80px;
 }
 
 footer {
   margin-top: 200px;
-  background-image: url("/img/g4.jpg");
+  background-image: url("img/g4.jpg");
   color: white;
 }
 .footbar {
@@ -280,4 +291,87 @@ i a:hover {
   display: grid;
   grid-template-columns: repeat(4,minmax(0,1fr));
   gap: 50px;
+}
+
+@media screen and (max-width: 600px) {
+  .loo {
+    margin: 2px 200px;
+    width: 10%;
+    height: auto;
+    margin-left:auto;
+    margin-right:auto;
+  }
+  .topnav {
+    float: none;
+  }
+  .navbar a,
+  .search-container input[type="text"],
+  .navbar .search-container button {
+    float: none;
+    display:inline;
+    text-align: left;
+    width: 100%;
+    margin: 0;
+    padding: 5px;
+    font-size: 14px;
+  }
+  .navbar a:hover{
+    font-size: medium;
+  }
+  .search-container input[type="text"] {
+    color: white;
+    position: absolute;
+    margin-top: 40px;
+    margin-left: -213px;
+    width: auto;
+  }
+  .navbar .search-container button {
+    color: white;
+    position: absolute;
+    margin-top: 40px;
+    margin-left: -30px;
+    width: auto;
+  }
+  header {
+    width: 100%;
+    background-image: url("img/jacket.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: -20px;
+  }
+  .intro {
+    margin-top: 100px;
+    height: 300px;
+  }
+  .Gtab {
+    margin-left: 100px;
+    margin-right: 100px;
+  }
+  .tab1 img, .tab2 img {
+    width: 100%;
+    height: 100%;
+  }
+  .tab2 img {
+    position: absolute;
+    margin-top: 471px;
+    width: 58.5%;
+    height: auto;
+    margin-left: -283px;
+  }
+  .wor1, .wor2 {
+    width: 100%;
+    height: auto;
+    font-size: 15px;
+  }
+  .wor2 {
+    margin-top: 188px;
+  }
+
+
+  .column {
+    width: 10%;
+    font-size: 2px;
+    height: auto;
+    float: none;
+  }
 }
