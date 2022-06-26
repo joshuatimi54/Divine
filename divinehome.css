@@ -165,6 +165,10 @@ main div.lll {
   margin: 10px 160px;
   margin-left: 250px;
 }
+.Gtab::after{
+  content: "";
+  clear: both;
+}
 .tab1 img, .tab2 img {
   width: 500px;
   float: left;
