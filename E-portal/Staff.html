@@ -13,18 +13,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Staff Portal</title>
-    <link rel="stylesheet" href="LOGIN e-portal.css" />
+    <link rel="stylesheet" href="staff.css" />
   </head>
   <body>
     <header>
-      <img class="loo" src="IMAGE/Divine Option logo.jpg" alt="logo" />
+      <!--img class="loo" src="IMAGE/Divine Option logo.jpg" alt="logo" />
       <div>
         <nav class="addr">
           <h1 class="schoolname">DIVINE OPTION INTERNALTIONAL COLLEGE</h1>
         </nav>
         <nav class="addr" id="addr1">Ado Ekiti, Ekiti State.</nav>
         <nav class="addr">Email: divineoptionschools@gmail.com</nav>
-      </div>
+      </div-->
       <div class="navbar">
         <a href="/Divine/index.html" class="active">HOME</a>
         <a href="LOGIN e-portal.html">E-PORTAL</a>
@@ -38,54 +38,36 @@
             <button type="submit"><i class="fa fa-search"></i></button>
           </form>
         </div>
-      </div>
-      <hr />
+      </div>      
     </header>
     <main>
-      <div id="Login">
-        <div></div>
+      <div id="Login">        
+          <form action="/ation_page.php">
+            <div id="logt"><b> Log In</b></div>
+            <div id="ac"><b>Create new account</b></div>
+            <div>
+              <img src="IMAGE/AVATER.jpg" alt="Image">
+            </div>
+            <div>
+              <label for="Email"><b>User Email</b></label>
+              <input type="email" name="Email" placeholder="Input Email address" required>
+  
+              <label for="Password"><b>Password</b></label>
+              <input type="password" name="password" placeholder="***********" required>
+
+              <button class="logbut" type="submit">Login</button>
+
+              <label>
+                <input type="checkbox" name="remember"> Remember me
+              </label>
+              <div class="container" style="background-color:#f1f1f1">
+                <a href="LOGIN e-portal.html"><button type="button" class="cancelbtn">Cancel</button></a>
+                <span class="psw">Forgot <a href="#">password?</a></span>
+              </div>
+            </div>            
+          </div>
+          </form>
       </div>
     </main>
-    <footer>
-      <div class="footbar">
-        <br><br><br>
-        <div class="GIT">
-          <strong class="GETIN">GET IN TOUCH</strong>
-          <P>Write us an email!</P><br><br>
-          <div>
-            <input class="fillspace1" type="email" placeholder="&#xf0e0 E-mail Address" name="email">
-            <button class="fillspace2">GET STARTED</button><br>
-          </div><br><br>
-          <hr><br><br><br>
-        </div>
-        <div class="footrow">
-          <div class="footloow"><br>
-            <img class="footloo" src="IMAGE/Divine Option logo.jpg" alt="logo">
-            DIVINE OPTION <br> INTERNALTIONAL <br> COLLEGE
-          </div>
-          <div id="footcol"><br>
-            <strong class="quicknav">QUICK NAVIGATION</strong>
-            <p><a href="/index.html">HOME</a></p>
-            <p><a href="LOGIN e-portal.html">E-PORTAL</a></p>
-            <p><a href="Staff.html">STAFF</a></p>
-            <p><a href="">ALUMI</a></p>
-            <p><a href="">ABOUT US</a></p>
-          </div>
-          <div id="footcol">
-            <p><strong>STAY CONNECTED</strong></p>
-            <p><a href="">Facebook</a></p>
-            <p><a href="">LinkID</a></p>
-            <p><a href="mailto:divineoptionschools@gmail.com">E-mail</a></p>
-          </div>
-          <div id="footcol"><br><strong>CONTACT ADDRESS</strong><br><br>
-            <address>Ogo - Oluwa Quarters, <br><br> Behind 132KVA,
-            <br><br> Omisanjana, Ado Ekiti, <br><br> Ekiti State. <br><br> 
-            <i class="fa fa-phone">+234-806-936-5047</i><br><br>
-            <i class="fa fa-envelope"><a href="mailto:divineoptionschools@gmail.com">
-            divineoptionschools@gmail.com</a></i></address>
-          </div><br><br><br>
-        </div><br><br><br>
-      </div>
-    </footer>
   </body>
 </html>
