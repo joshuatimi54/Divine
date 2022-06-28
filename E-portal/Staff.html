@@ -13,7 +13,211 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Staff Portal</title>
-    <link rel="stylesheet" href="Staff.css" />
+    <style>
+      body header, body main {
+  position: relative;
+}
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: rgb(0, 0, 0, 0.5);
+  background-image: url("IMAGE/g5.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  color: white;
+  background-blend-mode:soft-light;
+}
+
+/*
+header {
+  color: white;
+  position: relative;
+  margin-top: -35px;
+}
+
+.loo{
+  width: 110px;
+  height: 110px;
+  float: left;
+  border-radius: 10px;
+  position: relative;
+  top: 15px;
+  margin-left: 40px;
+}
+
+.schoolname {
+  font-size: 3vw;
+  position: relative;
+  top: 25px;
+  font-weight: 100;
+  }
+
+.addr {
+  font-size: small;
+  text-align: center;
+}
+#addr1 {
+  margin-top: 25px;
+}
+*/
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: #025940;
+  z-index: 1;
+  width: 100%;
+}
+
+.navbar a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  margin-left: 20px;
+  position: -webkit-sticky;
+  position: sticky;
+}
+
+.navbar a:hover {
+  background-color: rgb(247, 247, 19, 0.918);
+  color: #025940;
+  border-radius: 10px;
+  font-size: large;
+  padding: 10px;
+}
+
+.dropdown {
+  display: inline-block;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1;}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+*/
+.navbar .search-container {
+ float: right;
+}
+
+.navbar input[type="text"] {
+  padding: 6px;
+  margin-top: 8px;
+  font-size: 17px;
+  border-bottom: 2px solid #025940;
+  background-color: rgb(7, 7, 7, 0.4);
+}
+
+.navbar .search-container button {
+  float: right;
+  padding: 6px 10px;
+  margin-top: 8px;
+  margin-right: 20px;
+  font-size: 17px;
+  border-bottom: 2px solid #025940;
+  background-color: rgb(7, 7, 7, 0.4);
+  color: white;
+  cursor: pointer;
+}
+
+.navbar .search-container button:hover {
+  background: rgb(247, 247, 19, 0.918);
+  color: #025940;
+}
+
+
+#Login form {
+  border: 3px solid #f1f1f1;
+  box-shadow:0 10px 20px 0 rgba(0, 0, 0, 0.6), 0 10px 20px 0 rgba(0, 0, 0, 0.9);
+  margin-left: auto;
+  margin-right: auto;
+  background-color: rgb(248, 248, 248);
+  color: black;
+  width: 45%;
+  height: auto;
+  border-radius: 7px;
+  margin-top: 7%;
+  margin-bottom: 10%;
+  font-size: 15px;
+  padding: 35px; 
+}
+#logt {
+  font-size: 30px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+#ac {
+  text-align: center;
+}
+img {
+ border-radius: 50px;
+ margin-left: 33%;
+ margin-top: 10px;
+ margin-bottom: 15px;
+}
+input[type=Email], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+.logbut {
+  background-color: #025940;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border-radius: 10px;
+  cursor: pointer;
+  width: 100%;
+}
+
+.logbut:hover {
+  opacity: 0.8;
+}
+.cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: #f44336;
+}
+.container {
+  padding: 16px;
+  cursor: pointer;
+}
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+    </style>
   </head>
   <body>
     <header>
