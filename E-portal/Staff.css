@@ -1,180 +1,217 @@
 body header, body main {
-    position: relative;
+  position: relative;
+}
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: rgb(0, 0, 0, 0.5);
+  background-image: url("IMAGE/g5.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  color: white;
+  background-blend-mode:soft-light;
+}
+
+header {
+  color: white;
+  position: relative;
+  margin-top: -35px;
+}
+
+.loo{
+  width: 110px;
+  height: 110px;
+  float: left;
+  border-radius: 10px;
+  position: relative;
+  top: 15px;
+  margin-left: 40px;
+}
+
+.schoolname {
+  font-size: 3vw;
+  position: relative;
+  top: 25px;
+  font-weight: 100;
   }
-  body {
-    margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: rgb(0, 0, 0, 0.5);
-    background-image: url("IMAGE/g5.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    color: white;
-    background-blend-mode:soft-light;
-  }
-  
-  header {
-    color: white;
-    background-position: center;    
-    position: relative;
-    margin-top: -35px;
-  }
-  
-  .loo{
-    width: 110px;
-    height: 110px;
-    float: left;
-    border-radius: 10px;
-    position: relative;
-    top: 15px;
-    margin-left: 40px;
-  }
-  
-  .schoolname {
-    font-size: 3vw;
-    position: relative;
-    top: 25px;
-    font-weight: 100 !important;
-    }
-  
-  .addr {
-    font-size: small;
-    text-align: center;
-  }
-  #addr1 {
-    margin-top: 25px;
-  }
-  
-  * {
-    box-sizing: border-box;
-  }
-  
-  
-  .navbar {
-    overflow: hidden;
-    background-color: #025940;
-    margin-top: 15px;
-  }
-  
-  .navbar a {
-    float: left;
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
-    margin-left: 20px;
-  }
-  
-  .navbar a:hover {
-    background-color: rgb(247, 247, 19, 0.918);
-    color: #025940;
-    border-radius: 10px;
-    font-size: large;
-    padding: 10px;
-  }
-  
-  .navbar .search-container {
-   float: right;
-  }
-  
-  .navbar input[type="text"] {
-    padding: 6px;
-    margin-top: 8px;
-    font-size: 17px;
-    border-bottom: 2px solid #025940;
-    background-color: rgb(7, 7, 7, 0.4);
-  }
-  
-  .navbar .search-container button {
-    float: right;
-    padding: 6px 10px;
-    margin-top: 8px;
-    margin-right: 20px;
-    font-size: 17px;
-    border-bottom: 2px solid #025940;
-    background-color: rgb(7, 7, 7, 0.4);
-    color: white;
-    cursor: pointer;
-  }
-  
-  .navbar .search-container button:hover {
-    background: rgb(247, 247, 19, 0.918);
-    color: #025940;
-  }
+
+.addr {
+  font-size: small;
+  text-align: center;
+}
+#addr1 {
+  margin-top: 25px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: #025940;
+  margin-top: 15px;
+}
+
+.navbar a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  margin-left: 20px;
+}
+
+.navbar a:hover {
+  background-color: rgb(247, 247, 19, 0.918);
+  color: #025940;
+  border-radius: 10px;
+  font-size: large;
+  padding: 10px;
+}
+
+.navbar .search-container {
+ float: right;
+}
+
+.navbar input[type="text"] {
+  padding: 6px;
+  margin-top: 8px;
+  font-size: 17px;
+  border-bottom: 2px solid #025940;
+  background-color: rgb(7, 7, 7, 0.4);
+}
+
+.navbar .search-container button {
+  float: right;
+  padding: 6px 10px;
+  margin-top: 8px;
+  margin-right: 20px;
+  font-size: 17px;
+  border-bottom: 2px solid #025940;
+  background-color: rgb(7, 7, 7, 0.4);
+  color: white;
+  cursor: pointer;
+}
+
+.navbar .search-container button:hover {
+  background: rgb(247, 247, 19, 0.918);
+  color: #025940;
+}
+
+
+.portal {
+border: 1px solid black;
+border-radius: 10px;
+width: 25%;
+height: 100px;
+margin-top: 10%;
+margin-left: 100px;
+padding: 4%;
+height: 250px;
+font-size: xx-large;
+text-align: center;
+display: block;
+background-color: #025940;
+color: white;
+float: left;
+box-shadow:0 10px 20px 0 rgba(0, 0, 0, 0.6), 0 10px 20px 0 rgba(0, 0, 0, 0.9);
+}
+.staff:hover, .student:hover, .pay:hover {
+color: #025940;
+background-color: rgb(247, 247, 19, 0.918);
+box-shadow:0 10px 20px 0 rgba(0, 0, 0, 0.6), 0 10px 20px 0 rgba(0, 0, 0, 0.9); 
+cursor: pointer;
+}
+
+
 
 
 
 footer {
-    margin-top: 200px;
-    background-image: url("img/g4.jpg");
-    color: white;
-  }
-  .footbar {
-  background-image: linear-gradient(rgb(2, 89, 64, 0.6), rgb(2, 89, 64, 0.9), rgb(2, 89, 64, 1), rgb(2, 89, 64));
-  }
-  .GIT {
-    text-align: center;
-  }
-  .GIT strong {
-    font-size: 40px;
-  }
-  .fillspace1 {
-    border: 1px solid white;
-    padding: 6px;
-    border-radius: 20px;
-    width: 450px; 
-  }
-  .fillspace1::-webkit-input-placeholder {
-    font-family: fontawesome;
-    padding-left: 15px;
-  }
-  .fillspace2 {
-    border: 1px solid white;
-    padding: 6px;
-    border-radius: 20px;
-    color: #025940;
-    background-color: rgba(247, 247, 19, 0.918);
-  }
-  
-  .footloo{
-    width: 110px;
-    height: 110px;
-    float: left;
-    border-radius: 10px;
-    position: relative;
-    margin-right: 8px;
-  }
-  .footloow{ 
-    float: right;
-    position: relative;
-    font-size: 15px;
-  
-  }
-  #footcol p a, i a {
-    text-align: left;
-    text-decoration: none;
-    color: white;  
-    }
-  
-  #footcol p a:hover {
-    color: #025940;
-    background-color: rgba(247, 247, 19, 0.918);
-    border: 1px solid black;
-    border-radius: 7px;
-    padding: 5px;
-  }
-  i a:hover {
-    color: #025940;
-    background-color: rgba(247, 247, 19, 0.918);
-    border: 1px solid black;
-    border-radius: 7px;
-    padding: 5px;
-  }
-  .footrow {
-    margin: 0px 100px;
-    display: grid;
-    grid-template-columns: repeat(4,minmax(0,1fr));
-    gap: 50px;
-  }
-  
+margin-top: 200px;
+background-image: url("img/g4.jpg");
+color: white;
+margin-top: 700px;
+}
+.footbar {
+background-image: linear-gradient(rgb(2, 89, 64, 0.6), rgb(2, 89, 64, 0.9), rgb(2, 89, 64, 1), rgb(2, 89, 64));
+display: block;
+}
+.GIT {
+text-align: center;
+}
+.GIT strong {
+font-size: 40px;
+}
+.fillspace1 {
+border: 1px solid white;
+padding: 6px;
+border-radius: 20px;
+width: 450px; 
+}
+.fillspace1::-webkit-input-placeholder {
+font-family: fontawesome;
+padding-left: 15px;
+}
+.fillspace2 {
+border: 1px solid white;
+padding: 6px;
+border-radius: 20px;
+color: #025940;
+background-color: rgba(247, 247, 19, 0.918);
+cursor: pointer;
+}
+
+.footloo{
+width: 110px;
+height: 110px;
+float: left;
+border-radius: 10px;
+position: relative;
+margin-right: 8px;
+}
+.footloow{ 
+float: right;
+position: relative;
+font-size: 15px;
+
+}
+#footcol p a, i a {
+text-align: left;
+text-decoration: none;
+color: white;  
+}
+footer div div strong {
+color: black;
+font-size: x-large;
+}
+
+#footcol p a:hover {
+color: #025940;
+background-color: rgba(247, 247, 19, 0.918);
+border: 1px solid black;
+border-radius: 7px;
+padding: 5px;
+}
+i a:hover {
+color: #025940;
+background-color: rgba(247, 247, 19, 0.918);
+border: 1px solid black;
+border-radius: 7px;
+padding: 5px;
+}
+.footrow {
+margin: 0px 100px;
+display: grid;
+grid-template-columns: repeat(4,minmax(0,1fr));
+gap: 50px;
+}
