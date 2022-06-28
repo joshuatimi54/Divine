@@ -8,13 +8,13 @@ body header, body main {
     background-image: url("IMAGE/g5.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+    background-attachment: fixed;
     color: white;
     background-blend-mode:soft-light;
   }
   
   header {
     color: white;
-    background-position: center;    
     position: relative;
     margin-top: -35px;
   }
@@ -33,7 +33,7 @@ body header, body main {
     font-size: 3vw;
     position: relative;
     top: 25px;
-    font-weight: 100 !important;
+    font-weight: 100;
     }
   
   .addr {
@@ -48,6 +48,10 @@ body header, body main {
     box-sizing: border-box;
   }
   
+  body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+  }
   
   .navbar {
     overflow: hidden;
@@ -102,6 +106,7 @@ body header, body main {
     background: rgb(247, 247, 19, 0.918);
     color: #025940;
   }
+
   
 .portal {
   border: 1px solid black;
@@ -114,7 +119,7 @@ body header, body main {
   height: 250px;
   font-size: xx-large;
   text-align: center;
-  display: inline-block;
+  display: block;
   background-color: #025940;
   color: white;
   float: left;
@@ -133,9 +138,11 @@ footer {
   margin-top: 200px;
   background-image: url("img/g4.jpg");
   color: white;
+  margin-top: 700px;
 }
 .footbar {
 background-image: linear-gradient(rgb(2, 89, 64, 0.6), rgb(2, 89, 64, 0.9), rgb(2, 89, 64, 1), rgb(2, 89, 64));
+display: block;
 }
 .GIT {
   text-align: center;
@@ -159,6 +166,7 @@ background-image: linear-gradient(rgb(2, 89, 64, 0.6), rgb(2, 89, 64, 0.9), rgb(
   border-radius: 20px;
   color: #025940;
   background-color: rgba(247, 247, 19, 0.918);
+  cursor: pointer;
 }
 
 .footloo{
@@ -180,6 +188,10 @@ background-image: linear-gradient(rgb(2, 89, 64, 0.6), rgb(2, 89, 64, 0.9), rgb(
   text-decoration: none;
   color: white;  
   }
+footer div div strong {
+  color: black;
+  font-size: x-large;
+}
 
 #footcol p a:hover {
   color: #025940;
